@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const naivecoin = require('./../lib/naivecoin');
+const coin = require('./../lib/coin');
 
 const argv = require('yargs')
     .usage('Usage: $0 [options]')
@@ -16,4 +16,4 @@ const argv = require('yargs')
     .alias('h', 'help')
     .argv;
 
-naivecoin("0.0.0.0", "80", argv.peers, argv.logLevel, argv.name);
+coin("0.0.0.0", "80", argv.peers, argv.logLevel, argv.name);
