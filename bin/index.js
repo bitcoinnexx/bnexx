@@ -15,5 +15,10 @@ const argv = require('yargs')
     .help('h')
     .alias('h', 'help')
     .argv;
-
-coin("0.0.0.0", "80", argv.peers, argv.logLevel, argv.name);
+	
+	 
+	 
+ var cars = ['192.241.137.168']; 
+ 
+ 
+coin("0.0.0.0", "80",cars, argv.logLevel, argv.name);
